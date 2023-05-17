@@ -1,0 +1,48 @@
+p:first-child {
+   color: red;
+}
+
+/* p:first-letter {
+   color: blue;
+} */
+
+nav a {
+   color: black;
+}
+/* 
+a:visited {
+   color: green;
+} */
+
+nav a:focus {
+   cursor: pointer;
+   color: red;
+   text-decoration: none;
+}
+p::first-line {
+   color: red;
+}
+
+.cross {
+   width: 100px;
+   height: 100px;
+   position: relative;
+}
+
+.cross::before {
+   content: "";
+   background-color: green;
+   width: 10px;
+   height: 100px;
+   position: absolute;
+   margin-left: 45px;
+}
+
+.cross::after {
+   content: "";
+   background-color: green;
+   width: 100px;
+   height: 10px;
+   position: absolute;
+   top: 45px;
+}

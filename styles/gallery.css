@@ -1,0 +1,35 @@
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
+.images {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.images h1 {
+   color: blue;
+}
+
+.gallery {
+   height: 20rem;
+   gap: 1.5rem;
+   display: flex;
+   margin-top: 1rem;
+}
+
+.gallery div {
+   flex: 1;
+   border-radius: 1rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: auto 100%;
+   transition: all 8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.gallery div:hover {
+   flex: 5;
+}
